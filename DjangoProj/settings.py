@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ia@58q6)kk+irp-nl%5e9!8_)@6(0g0_n4h6r02h0e1%ifbrz0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['prem','127.0.0.1', '127.0.0.1/irisApp/predict/', '/irisApp/predict/','127.0.0.1/irisApp/', 'https://mlmodeploy.herokuapp.com/', 'https://mlmodeploy.herokuapp.com','https://mlmodeploy.herokuapp.com/irisApp/predict/', 'http://mlmodeploy.herokuapp.com/irisApp/predict/', 'mlmodeploy.herokuapp.com','mlmodeploy.herokuapp.com/irisApp/predict/']
+ALLOWED_HOSTS = ['127.0.0.1', 'mlmodeploy.herokuapp.com']
 
 
 # Application definition
@@ -38,12 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'irisApp',
-    'rest_framework',
-    'corsheaders',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -54,7 +52,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = 'DjangoProj.urls'
 
 TEMPLATES = [
