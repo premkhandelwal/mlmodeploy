@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ia@58q6)kk+irp-nl%5e9!8_)@6(0g0_n4h6r02h0e1%ifbrz0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['prem','127.0.0.1', '127.0.0.1/irisApp/predict/', '/irisApp/predict/','127.0.0.1/irisApp/', 'https://mlmodeploy.herokuapp.com/', 'https://mlmodeploy.herokuapp.com','https://mlmodeploy.herokuapp.com/irisApp/predict/']
+ALLOWED_HOSTS = ['prem','127.0.0.1', '127.0.0.1/irisApp/predict/', '/irisApp/predict/','127.0.0.1/irisApp/', 'https://mlmodeploy.herokuapp.com/', 'https://mlmodeploy.herokuapp.com','https://mlmodeploy.herokuapp.com/irisApp/predict/', 'http://mlmodeploy.herokuapp.com/irisApp/predict/']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'irisApp',
-    # 'rest-framework'
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
